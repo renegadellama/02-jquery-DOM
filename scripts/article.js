@@ -3,12 +3,22 @@
 var articles = [];
 
 function Article (opts) {
+  this.title = opts.title;
+  this.category = opts.category;
+  this.author = opts.author;
+  this.authorUrl = opts.authorUrl;
+  this.publishedOn = opts.publishedOn;
+  this.body = opts.body;
   // TODO: Use the JS object passed in to complete this constructor function:
   // Save ALL the properties of `opts` into `this`
 }
+articles.push(rawData);
+console.log(articles);
 
 Article.prototype.toHtml = function() {
   var $newArticle = $('article.template').clone();
+
+
   /* TODO: This cloned article is no longer a template,
   as it now has real data attached to it! We need to account
   for that before this current article gets rendered to our
